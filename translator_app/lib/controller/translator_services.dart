@@ -25,3 +25,22 @@ Future<Translatemodel> translate(String q, String target) async {
 
   return model;
 }
+
+Future<List<dynamic>> fetchlanguages() async {
+  Dio dio = new Dio();
+  var res = await dio.get(
+    'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
+    options: new Options(
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'Accept-Encoding': 'application/gzip',
+        'X-RapidAPI-Key': '0107807461msh79cfdc01a4b2541p133003jsnde45ea39999c',
+        'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+      },
+    ),
+  );
+  //print(res.data);
+  List<dynamic> languages = res.data['data']['languages'];
+  //print(languages[0]['language']);
+  return languages;
+}
