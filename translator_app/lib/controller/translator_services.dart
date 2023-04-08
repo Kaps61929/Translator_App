@@ -15,7 +15,7 @@ Future<Translatemodel> translate(String q, String target) async {
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '0107807461msh79cfdc01a4b2541p133003jsnde45ea39999c',
+        'X-RapidAPI-Key': 'a0f5e6e9eamsh4d80afa33d60788p1f06fejsn7be51220d2eb',
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
       },
     ),
@@ -34,7 +34,7 @@ Future<List<dynamic>> fetchlanguages() async {
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '0107807461msh79cfdc01a4b2541p133003jsnde45ea39999c',
+        'X-RapidAPI-Key': 'a0f5e6e9eamsh4d80afa33d60788p1f06fejsn7be51220d2eb',
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
       },
     ),
