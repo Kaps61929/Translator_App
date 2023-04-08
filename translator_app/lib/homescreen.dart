@@ -1,10 +1,5 @@
-import 'dart:developer';
-import 'dart:ffi';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:translator_app/controller/translator_services.dart';
 import 'package:translator_app/model/tranlastemode.dart';
 
